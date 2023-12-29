@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center"><span class="hollow-text"><u>Student</u>.<u>io</u></span></h1>
+    <div class="container">
+
+        <form action="/submit" method="get" onsubmit="return validate_form()" name="my_form">
+            <span class="form_field">
+                <label for="uname">Username </label>
+                    <input type="text" name="uname" class="mid-input" placeholder="john_doe">
+                <span class="alert_span" id="alert_uname">Username length should be between 5 to 20 characters!</span>
+            </span>
+            <span class="form_field">
+                <label for="pword">Password </label>
+                <input type="password" name="pword" class="mid-input" placeholder="New Password">
+                <span class="alert_span" id="alert_pword">Password length should be between 8 to 20 characters!</span>
+            </span>
+            <span class="form_field">
+                <label for="pword2">Confirm Password </label>
+                <input type="password" name="pword2" class="mid-input" placeholder="Confirm Password">
+                <span class="alert_span" id="alert_pword2">Passwords should be same!</span>
+            </span>
+            <span class="form_field">
+                <label for="fname">Name </label>
+                <input type="text" name="fname" class="mid-input" placeholder="John Doe">
+                <span class="alert_span" id="alert_fname">Name should be between 5 to 30 characters</span>
+            </span>
+            <span class="form_field">
+                <label for="email">Email </label>
+                <input type="email" name="email" class="mid-input" placeholder="johndoe@gmail.com">
+                <span class="alert_span" id="alert_email">Please enter a valid Email</span>
+            </span>
+            <span class="form_field">
+                <label for="address">Address </label>
+                <input type="text" name="address" class="mid-input" placeholder="177A, Bleecker Street">
+                <span class="alert_span" id="alert_address">Please enter an address</span>
+            </span>
+            <span class="form_field">
+                <label for="country">Country </label>
+                <select name="country" id="country" class="mid-input">
+                    <option value="select">Please select a country</option>
+                    <option value="India">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Knigdom</option>
+                    <option value="India">Other</option>
+                </select>
+                <span class="alert_span" id="alert_country">Please select a country</span>
+            </span>
+            <span class="form_field">
+                <label for="pin">Pin Code </label>
+                <input type="text" name="pin" class="mid-input" placeholder="123456">
+                <span class="alert_span" id="alert_pin">Please enter a valid zip code</span>
+            </span>
+            <span class="form_field">
+                <label for="gender">Gender </label>
+                <span>
+                    <input type="radio" name="gender" id="male"> Male
+                    <input type="radio" name="gender" id="female"> Female
+                </span>
+                <span class="alert_span" id="alert_gender">Please select a gender</span>
+            </span>
+            <span class="form_field">
+                <label for="lang">Language </label>
+                <span>
+                    <input type="checkbox" name="lang" id="hindi"> Hindi
+                    <input type="checkbox" name="lang" id="english"> English
+                </span>
+                <span class="alert_span" id="alert_lang">Please select a language</span>
+            </span>
+            <span class="form_field">
+                <label for="about">About </label>
+                <textarea name="about" id="about" cols="30" rows="5" class="mid-input about" placeholder="Tell Something About You"></textarea>
+                <span class="alert_span" id="alert_about">Please tell something about you</span>
+            </span>
+            <span class="form_field submit_field">
+                <input type="submit" value="Submit">
+            </span>
+        </form>
+    </div>
+    <br><br>
+    </body>
+<script src="script.js"></script>
+</html>
